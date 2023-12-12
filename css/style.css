@@ -64,7 +64,7 @@ span.title{
 
     /* Home */
 section#home {
-    background-image: url('/assets/img/bg-main.jpg');
+    background-image: url('/assets/img/bg-main-1.jpg');
     background-size: cover;
     background-position: center;
     margin-top: 61px;
@@ -78,6 +78,14 @@ section#home {
     max-width: 600px;
     background-color:rgba(255, 255, 255, 0.8);
 }
+
+.audio {
+    position: fixed;
+    top: 10%;
+    left: 47%;
+    z-index: 99999;
+} 
+
     /* Home */
 
     /* Couple */
@@ -86,7 +94,7 @@ section#couple {
     background-size: cover;
     background-position: center;
     height: 120vh;
-    padding-top: 2%;
+    padding-top: 0%;
 }
 .image-wanita img {
     width: 100%;
@@ -96,7 +104,6 @@ section#couple {
 }
 .image-pria, .image-wanita p {
     font-size: 1.3rem;
-    font-weight: bold;
 }
 
 .image-pria img {
@@ -114,7 +121,7 @@ section#couple {
     /* Couple */
 
 section#galeri {
-    background-image: url('/assets/img/galeri-bg.jpg');
+    background-image: url('/assets/img/galeri/galeri-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -124,10 +131,11 @@ section#galeri {
 }
 
 section#event {
-    background-image: url('/assets/img/even-bg.jpg');
+    background-image: url('/assets/img/even/even-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
+    padding-top: 2%;
 }
 #event h2  {
     font-weight: 500;
@@ -186,6 +194,12 @@ h1#tanggal {
     margin-left: 12px;
 }
 
+.bg-opacity {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
     /* Ucapan */
 section#ucapan {
     background-image: url('/assets/img/flower.jpg');
@@ -230,25 +244,45 @@ form button:hover {
 #ucapan-content {
     position: relative;
     margin: 2% auto;
-    border: 2px solid black;
     overflow: auto;
     padding: 10px;
-    max-width: 432px;
+    max-width: 450px;
 }
 #ucapan-content .content  {
     color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(100, 100, 255, 0.7);
+    margin: 4px;
+    padding-left: 13px;
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-between;
 }
 #ucapan-content .content h3 {
     font-family: 'Nova Square', sans-serif;
     font-size: 30px;
 }
+#ucapan-content .content p {
+    font-size: 13px;
 
-/* #ucapan-content .content p {
-    font-size: 16px;
-} */
+}
 
+.buttonHapus {
+    padding: 20px;
+}
+
+.buttonHapus button {
+    padding: 4px;
+    outline: none;
+    border: none;
+    color: white;
+    max-width: 100px;
+    border-radius: 5px;
+    background-color: red;
+}
 section#gift {
-    background-image: url('/assets/img/pesan-bg.jpg');
+    background-image: url('/assets/img/gift/pesan-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -338,9 +372,6 @@ section#send {
         width: 100%;
         gap: 15px;
     }
-    #text-wanita {
-        padding-top: 60px;    
-    }
     
     .image-wanita img {
         min-width: 50%;
@@ -350,7 +381,6 @@ section#send {
     }
     .image-pria, .image-wanita p {
         font-size: 1.1rem;
-        font-weight: bold;
     }
     
     .image-pria img {
@@ -375,22 +405,19 @@ section#send {
         top: 30px;
 
     }
-    #text-pria {
-        padding-top: 60px;    
-    }
     .title-foto {
         font-family: 'Dancing Script', cursive;
         font-size: 45px;
+        padding-top: 60px;
     }
-
     section#galeri {
-        background-image: url('/assets/img/galeri-bg.jpg');
+        background-color: cadetblue;
         background-size: cover;
         background-position: center;
         height: 100vh;
     }
     section#event {
-        background-image: url('/assets/img/even-bg.jpg');
+        background-image: url('/assets/img/even/even-bg.jpg');
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -431,7 +458,7 @@ section#send {
      /* Ucapan */
 
 section#ucapan {
-    background-image: url('/assets/img/pesan-bg.jpg');
+    background-color: gainsboro;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -453,13 +480,17 @@ form button {
 
  /* gift */
  section#gift {
-    background-image: url('/assets/img/pesan-bg.jpg');
+    background-color: beige;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 90vh;
     padding-top: 10%;
 }
  /* gift */
+}
+
+button.btn-success {
+    min-width: 100%;
 }
 
 /* Medium devices (tablets, less than 768px) */
@@ -495,7 +526,6 @@ form button {
     }
     .image-pria, .image-wanita p {
         font-size: 1.1rem;
-        font-weight: bold;
     }
     
     .image-pria img {
@@ -528,13 +558,13 @@ form button {
         font-size: 45px;
     }
     section#galeri {
-        background-image: url('/assets/img/galeri-bg.jpg');
+        background-color: cadetblue;
         background-size: cover;
         background-position: center;
         height: 100vh;
     }
     section#ucapan {
-        background-image: url('/assets/img/pesan-bg.jpg');
+        background-color: gainsboro;
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -557,8 +587,8 @@ form button {
     }
 
    /* gift */
- section#gift {
-    background-image: url('/assets/img/pesan-bg.jpg');
+   section#gift {
+    background-color: beige;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -599,7 +629,7 @@ form button {
         font-size: 50px;
     }
     section#galeri {
-        background-image: url('/assets/img/galeri-bg.jpg');
+        background-color: cadetblue;
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -612,7 +642,7 @@ form button {
         padding-top: 2%;
     }
     section#ucapan {
-        background-image: url('/assets/img/pesan-bg.jpg');
+        background-color: gainsboro;
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -632,6 +662,12 @@ form button {
         padding: 6px;
         margin: 0;
         max-width: 100%;
+    }
+    section#gift {
+        background-color: beige;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
     }
 }
 
@@ -662,13 +698,13 @@ form button {
         padding-top: 2%;
     }
     section#galeri {
-        background-image: url('/assets/img/galeri-bg.jpg');
+        background-color: cadetblue;
         background-size: cover;
         background-position: center;
         height: 100vh;
     }
     section#ucapan {
-        background-image: url('/assets/img/pesan-bg.jpg');
+        background-color: gainsboro;
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -689,4 +725,10 @@ form button {
         margin: 0;
         max-width: 100%;
     }
+    section#gift {
+        background-color: beige;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }       
 }
