@@ -1,0 +1,692 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+  padding: 0;
+}
+    /* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 999;
+}
+nav ul .nav-item {
+    font-size: 1.3rem;
+}
+
+nav ul .nav-item .nav-link {
+    color: white;
+}
+
+    /* Navbar */
+
+    /* Homepage */
+
+section#homepage{
+    background-image: url('/assets/img/bg-main.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+
+.homepage {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+span.title{
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+}
+.start-page .button-undangan{
+    width: 100%;
+    padding-top: 27px;
+}
+.start-page .button-undangan a {
+    color: white;
+    margin: 0 auto;
+    width: 60%;
+    background-color: green;
+    border-radius: 3px;   
+}
+    /* Homepage */
+
+    /* Home */
+section#home {
+    background-image: url('/assets/img/bg-main.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 61px;
+    height: 100vh;
+}
+#home .container {
+    padding-top: 23%;
+}
+.text-title {
+    margin: 0 auto;
+    max-width: 600px;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+    /* Home */
+
+    /* Couple */
+section#couple {
+    background-image: url('/assets/img/home/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    padding-top: 2%;
+}
+.image-wanita img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+.image-pria, .image-wanita p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.image-pria img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.title-foto {
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+}
+
+    /* Couple */
+
+section#galeri {
+    background-image: url('/assets/img/galeri-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.box-images img {
+    width: 100%;
+}
+
+section#event {
+    background-image: url('/assets/img/even-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+#event h2  {
+    font-weight: 500;
+}
+#event h1  {
+    font-weight: 400;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: pre;
+    margin-top: 50px;
+}
+
+.date-box {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+}
+
+.location{
+    font-size: 1rem;
+    margin-right: 70px;
+}
+.location a {
+    color: black;
+    background-color: #BFF9C1;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.location a:hover{
+    background-color: #207523;
+    color:white;
+    transition: all;
+}
+h1#tanggal {
+    font-weight: 600;
+}
+#time-countdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.4rem;
+}
+#time-format {
+    word-spacing: 30px;
+}
+#text-time {
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+    /* Ucapan */
+section#ucapan {
+    background-image: url('/assets/img/flower.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    overflow: auto;
+}
+
+form {
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    flex-direction: column;
+}
+input#name {
+    padding: 6px;
+    margin: 7px;
+}
+textarea{
+    resize: none;
+    margin: 7px;
+    padding: 6px;
+}
+
+form button {
+    margin: 7px;
+    width: 50%;
+    margin: 0 auto;
+    outline: none;
+    background: #BFF9C1;
+    color: black;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+form button:hover {
+    background: #207523;
+    color: white;
+    transition: all;
+}
+#ucapan-content {
+    position: relative;
+    margin: 2% auto;
+    border: 2px solid black;
+    overflow: auto;
+    padding: 10px;
+    max-width: 432px;
+}
+#ucapan-content .content  {
+    color: white;
+}
+#ucapan-content .content h3 {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 30px;
+}
+
+/* #ucapan-content .content p {
+    font-size: 16px;
+} */
+
+section#gift {
+    background-image: url('/assets/img/pesan-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 10%;
+}
+.fa-copy {
+    cursor: pointer;
+}
+section#send {
+    background-image: url('/assets/img/bg-send.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 10%;
+}
+
+.scrollPicture {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.scrollPicture.active { 
+    transform: translateY(0);
+    opacity:  1;
+}
+    /* Ucapan */
+/* RESPONSIVE DESIGN */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px)  {
+    nav{
+        margin: 0;
+    }
+    nav ul .nav-item {
+        font-size: 0.8rem;
+    } 
+    section#homepage{
+        background-image: url('/assets/img/bg-main.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding-top: 200px;
+        box-sizing: border-box;
+    }
+    .homepage {
+        padding: 0;
+        min-width: 100%;
+    }
+    .start-page h1 {
+        font-size: 25px;
+    }
+
+    .start-page .button-undangan{
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 27px;
+    }
+
+    .start-page .button-undangan a {
+        color: white;
+        background-color: green;
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 3px;
+    }
+    #home .container {
+        padding-top: 70%;
+    }
+    .text-title {
+        margin: 0 auto;
+        max-width: 600px;
+        background-color:rgba(255, 255, 255, 0.8);
+    }
+    section#couple {
+        background-image: url('/assets/img/home/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        padding-top: 2%;
+    }
+    .image-wanita {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+    }
+    #text-wanita {
+        padding-top: 60px;    
+    }
+    
+    .image-wanita img {
+        min-width: 50%;
+        max-height: 38vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .image-pria, .image-wanita p {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .image-pria img {
+        min-width: 50%;
+        max-height: 38vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .image-pria {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 150px;
+        position: relative;
+        gap: 15px;
+        width: 100%;
+    }
+    .image-pria::before{
+        content: '&';
+        width: 100%;
+        font-size: 3.5rem;
+        position: absolute;
+        top: 30px;
+
+    }
+    #text-pria {
+        padding-top: 60px;    
+    }
+    .title-foto {
+        font-family: 'Dancing Script', cursive;
+        font-size: 45px;
+    }
+
+    section#galeri {
+        background-image: url('/assets/img/galeri-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    section#event {
+        background-image: url('/assets/img/even-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    
+    .date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: pre;
+        margin-top: 50px;
+        max-width: 92%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .date-box {
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+    #time-countdown {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1.3rem;
+    }
+    #time-format {
+        word-spacing: 30px;
+    }
+    #text-time {
+        display: flex;
+        gap: 55px;
+        justify-content: center;
+        margin-left: 12px;
+    }
+     /* Ucapan */
+
+section#ucapan {
+    background-image: url('/assets/img/pesan-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+form {
+    max-width: 100%;
+    padding-left: 10px;
+}
+
+form button {
+    width: 100%;
+    margin: 15px auto;
+    outline: none;
+    background: #BFF9C1;
+    color: black;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+ /* gift */
+ section#gift {
+    background-image: url('/assets/img/pesan-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 10%;
+}
+ /* gift */
+}
+
+/* Medium devices (tablets, less than 768px) */
+@media (max-width: 767.98px) {
+    nav{
+        margin: 0;
+        padding: 0;
+    }
+    nav ul .nav-item {
+        font-size: 0.4rem;
+    } 
+    section#couple {
+        background-image: url('/assets/img/home/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        padding-top: 2%;
+    }
+    .image-wanita {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+    }
+    #text-wanita {
+        padding-top: 60px;    
+    }
+    
+    .image-wanita img {
+        min-width: 50%;
+        max-height: 38vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .image-pria, .image-wanita p {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .image-pria img {
+        min-width: 50%;
+        max-height: 38vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .image-pria {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 150px;
+        position: relative;
+        gap: 15px;
+        width: 100%;
+    }
+    .image-pria::before{
+        content: '&';
+        width: 100%;
+        font-size: 3.5rem;
+        position: absolute;
+        top: 30px;
+
+    }
+    #text-pria {
+        padding-top: 60px;    
+    }
+    .title-foto {
+        font-family: 'Dancing Script', cursive;
+        font-size: 45px;
+    }
+    section#galeri {
+        background-image: url('/assets/img/galeri-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    section#ucapan {
+        background-image: url('/assets/img/pesan-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    form {
+        margin-left: 9%;
+        margin-right: 12%;
+        gap: 10px;
+    }
+    input#name {
+        padding: 6px;
+        margin: 0;
+        max-width: 100%;
+    }
+    textarea{
+        resize: none;
+        padding: 6px;
+        margin: 0;
+        max-width: 100%;
+    }
+
+   /* gift */
+ section#gift {
+    background-image: url('/assets/img/pesan-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 10%;
+}
+.fa-copy {
+    cursor: pointer;
+}
+ /* gift */
+}
+    
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    nav{
+        margin: 0;
+        padding: 0;
+    }
+    nav ul .nav-item {
+        font-size: 1rem;
+    } 
+    
+    
+    .image-wanita img {
+        width: 50%;
+        height: 55vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .image-pria img {
+        width: 50%;
+        height: 55vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .title-foto {
+        font-family: 'Dancing Script', cursive;
+        font-size: 50px;
+    }
+    section#galeri {
+        background-image: url('/assets/img/galeri-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    section#couple {
+        background-image: url('/assets/img/home/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 120vh;
+        padding-top: 2%;
+    }
+    section#ucapan {
+        background-image: url('/assets/img/pesan-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    form {
+        margin-left: 9%;
+        margin-right: 12%;
+        gap: 10px;
+    }
+    input#name {
+        padding: 6px;
+        margin: 0;
+        max-width: 100%;
+    }
+    textarea{
+        resize: none;
+        padding: 6px;
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .image-wanita img {
+        width: 100%;
+        height: 65vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .image-pria img {
+        width: 100%;
+        height: 65vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .title-foto {
+        font-family: 'Dancing Script', cursive;
+        font-size: 52px;
+    }
+    section#couple {
+        background-image: url('/assets/img/home/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 120vh;
+        padding-top: 2%;
+    }
+    section#galeri {
+        background-image: url('/assets/img/galeri-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    section#ucapan {
+        background-image: url('/assets/img/pesan-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    form {
+        margin-left: 9%;
+        margin-right: 12%;
+        gap: 10px;
+    }
+    input#name {
+        padding: 6px;
+        margin: 0;
+        max-width: 100%;
+    }
+    textarea{
+        resize: none;
+        padding: 6px;
+        margin: 0;
+        max-width: 100%;
+    }
+}
